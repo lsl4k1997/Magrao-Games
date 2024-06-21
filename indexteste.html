@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='refresh' content='10'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @media screen and (max-width: 992px){
+            #ibuscar{
+                display: none;
+            }
+            
+        }
+        @media screen and (min-width: 992px){
+            #buscartablete{display: none;}
+        }
+        nav{
+            background-color: rgb(44, 44, 44);
+            padding: 1px;
+        }
+        nav > a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.7em;
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+        }
+        #logotw{
+            margin-right: 2px;
+            margin-top: 3px;
+            color: rgb(253, 253, 253);
+            float: right;
+        }
+       
+        
+    </style>
+
+    
+    <title>Barras de Navegação</title>
+
+</head>
+<body> 
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">CONTATO</a>
+        <a href="#">PEDIR JOGO</a>
+        <a href="#">DMCA</a>
+        <a href="https://github.com/lsl4k1997" id="logotw" target="_blank"><i class="bi bi-github text-light"></i></a>
+    </nav>
+
+    <nav class="navbar bg-dark navbar-expand-md">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center text-light"><img src="logo magrao.png" alt="" width="50px">agrão Games</div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><i class="bi bi-list text-light"></i></button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <a href="#" class="nav-link text-light">IDIOMA</a>
+                <a href="#" class="nav-link text-light">CRACKERS</a>
+                <a href="#" class="nav-link text-light">CATEGORIAS</a>
+                <a href="#" class="nav-link text-light">COMO INSTALAR</a>
+            </div>  
+            <form action="" id="ibuscar">
+                <div class="input-group">
+                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
+                    <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+                </div>
+            </form>  
+        </div>        
+    </nav>
+    <form action="" id="buscartablete">
+        <div class="input-group">
+            <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
+            <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+        </div>
+    </form>
+</html>
