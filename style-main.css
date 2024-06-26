@@ -5,14 +5,3 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-main{
-    width: 50%;
-}
-aside{
-    width: 30%;
-}
-
-
-
-<main class="col-12 col-md-8 bg-success p-5">
