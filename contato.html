@@ -8,54 +8,78 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style-header.css">
-    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-main-aside.css">
     <link rel="stylesheet" href="media queries e estilo/medias.css">
 
     <title>Magrão Games</title>
 
 </head>
 <body> 
-    <!-- Cabeçalho -->
+    <!-- CABEÇALHO -->
     <header>
         <a href="index.html">HOME</a>
-        <a href="#">CONTATO</a>
+        <a href="contato.html">CONTATO</a>
         <a href="#">PEDIR JOGO</a>
-        <a href="#">DMCA</a>
-        <a href="https://github.com/lsl4k1997" id="logotw" target="_blank"><i class="bi bi-github text-light"></i></a>
+        <a href="dmca.html">DMCA</a>
+        <a href="https://github.com/lsl4k1997" id="logogit" target="_blank"><i class="bi bi-github text-light"></i></a>
     </header>
 
-    <!-- Barra de navegação -->
+    <!-- BARRA DE NAVEGAÇÃO -->
     <nav>
     <nav class="navbar bg-dark navbar-expand-md">
         <div class="container-fluid">
-            <div class="navbar-brand d-flex align-items-center text-light"><img src="imagens-index/logo magrao.png" alt="" width="50px">agrão Games</div>
+            <div class="navbar-brand d-flex align-items-center text-light"><a href="index.html" class="text-decoration-none text-white"><img src="imagens-index/logo magrao.png" alt="" width="50px">agrão Games</a></div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" id="menuhamburguer"><i class="bi bi-list text-light"></i></button>
 
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <a href="#" class="nav-link text-light">Idioma</a>
                 <a href="#" class="nav-link text-light">Crackers</a>
-                <a href="#" class="nav-link text-light">Categorias</a>
-                <a href="#" class="nav-link text-light">Como Instalar</a>
-            </div>  
+
+                <div class="dropdown">
+                <button class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Categorias</button>
+                <ul class="dropdown-menu" id="idropdown">
+                    <li class="dropdown-item "><a href="#">Ação</a></li>
+                    <li class="dropdown-item "><a href="#">Aventura</a></li>
+                    <li class="dropdown-item "><a href="#">Corrida</a></li>
+                    <li class="dropdown-item "><a href="#">Esporte</a></li>
+                    <li class="dropdown-item "><a href="#">Rpg</a></li>
+                    <li class="dropdown-item "><a href="#">Terror</a></li>
+                    <li class="dropdown-item "><a href="#">Mundo Aberto</a></li>
+                    <li class="dropdown-item "><a href="#">Estratégia</a></li>
+                    <li class="dropdown-item "><a href="#">Indie</a></li>
+                    <li class="dropdown-item "><a href="#">Sobrevivência</a></li>
+                    <li class="dropdown-item "><a href="#">Medieval</a></li>
+                </ul>
+                </div>
+            
+                <a href="#" class="nav-link text-light">Como Instalar</a>  
+            </div>
+
+            <!-- CAMPO DE BUSCA RESOLUÇÃO APARTIR DE MD OU SUPERIOR. @MEDIA QUERIRES-->
             <form action="" id="ibuscar">
                 <div class="input-group">
-                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-                    <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
-                </div>
+                    <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                    </div>
+                  </div>
             </form>  
+
         </div>        
     </nav>
 
-    <!-- Campo de pesquisa para resolução md -->
-    <form action="" id="buscartablete">
+    <!-- CAMPO DE BUSCA RESOLUÇÃO ATÉ MD -->
+    <form action="" id="buscar" class="d-md-none">
         <div class="input-group">
-            <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-            <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Buscar</button>
+            </div>
         </div>
     </form>
 
-        <!-- FOTO KRATOS -->
+        <!-- IMAGEM ABAIXO DO NAV -->
         <section>
             <div id="caixadetexto">
                 <h1>Jogos Gratuitos</h1>
@@ -63,19 +87,19 @@
             </div>
         </section>
     </nav>
+    
+<!--  MAIN,ASIDE E CARDS RESOLUÇÃO MD OU SUPERIOR -->
+<div class="container d-flex">
+    <div class="row">
+        <div class="col-12 col-lg-8 m-0">
 
-    <!-- main com aside responsivo com cards de contéudo-->
-    <div class="container d-flex">
-        <div class="row">
-            <div class="col-12 col-lg-8 m-0">
-
-             <!-- CONTÉUDO MAIN com Cards-->   
+            <!-- MAIN CONTATO-->
             <main class="w-100">
                 <div class="container border my-5 p-2">
                     <hr>
                     <h1 class="display-6">Contato</h1>
                     <div class="lead">Críticas | Melhorias | Parceria | Link Quebrado</div>
-
+            
                     <div>Vamos descartar qualquer outro email que não esteja relacionado acima pois ao contrário, responderemos assim que possível!  <span class="negrito">lsl4k1997@gmail.com</span> 
                     <br>
                     <br>
@@ -89,8 +113,9 @@
                     O texto está errado, o download e a tradução estão quebrados.
                     </div>
                 </div>
-            </main>  
-            </div>
+            </main>   
+
+        </div>
 
             <!-- ASIDE-->
             <aside class="col-12 col-lg-4 p-5">
@@ -99,10 +124,12 @@
                             <hr class="flex-fill">
                         </div>
                         <div>
-                            <form action="" class="mb-5">
+                            <form action="" id="ibuscar" class="mb-4">
                                 <div class="input-group">
-                                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-                                    <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+                                    <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                                    </div>
                                 </div>
                             </form>  
                         </div>
@@ -150,11 +177,12 @@
                         </div>
             </aside>
 
-        </div>   
-    </div>
+    </div>   
+</div>
+<!-- FECHAMENTO DO MAIN-->
 
-        <!-- FOOTER - RODAPÉ -->
-    <footer class="border-top text-muted bg-dark">
+        <!-- RODAPÉ -->
+    <div class="border-top text-muted bg-dark">
         <div class="container">
             <hr class="text-muted">
             <div class="row py-3">  
@@ -165,19 +193,18 @@
                     <a href="#" class="text-decoration-none text-light"><img src="imagens-index/logo magrao.png" alt="logo/magrao" style="width: 40px;"> agrão Games</a>
                 </div>
                 <div class="col-12 col-md-4 text-center">
-                    <a href="index.html" class="text-decoration-none text-muted">Home |</a>
-                    <a href="#" class="text-decoration-none text-muted">Contato |</a>
-                    <a href="#" class="text-decoration-none text-muted">Sobre</a>
+                    <a href="index.html" id="stilolinks">Home |</a>
+                    <a href="contato.html"  id="stilolinks">Contato |</a>
+                    <a href="#" id="stilolinks">Sobre</a>
                 </div>
             </div>
         </div>
-        <div class="container mt-2 text-center ">
+        <div class="container mt-2 text-center">
             <div class="row">
                 <div class="col">
-                    <p>© | Todos jogos são via torrent, via link magnético. não hospedamos nada em nosso servidor.<a href="#" class="text-decoration-none text-light"> DMCA</a></p>
+                    <p>© | Todos jogos são via torrent, via link magnético. não hospedamos nada em nosso servidor.<a href="dmca.html" class="" id="stilolinks"> DMCA</a></p>
                 </div>
             </div>
         </div>
-
-    </footer>
+    </div>
 </html>

@@ -8,14 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style-header.css">
-    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-main-aside.css">
     <link rel="stylesheet" href="media queries e estilo/medias.css">
 
     <title>Magrão Games</title>
 
 </head>
 <body> 
-    <!-- Cabeçalho -->
+    <!-- CABEÇALHO -->
     <header>
         <a href="index.html">HOME</a>
         <a href="contato.html">CONTATO</a>
@@ -24,38 +24,62 @@
         <a href="https://github.com/lsl4k1997" id="logogit" target="_blank"><i class="bi bi-github text-light"></i></a>
     </header>
 
-    <!-- Barra de navegação -->
+    <!-- BARRA DE NAVEGAÇÃO -->
     <nav>
     <nav class="navbar bg-dark navbar-expand-md">
         <div class="container-fluid">
-            <div class="navbar-brand d-flex align-items-center text-light"><img src="imagens-index/logo magrao.png" alt="" width="50px">agrão Games</div>
+            <div class="navbar-brand d-flex align-items-center text-light"><a href="index.html" class="text-decoration-none text-white"><img src="imagens-index/logo magrao.png" alt="" width="50px">agrão Games</a></div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" id="menuhamburguer"><i class="bi bi-list text-light"></i></button>
 
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <a href="#" class="nav-link text-light">Idioma</a>
                 <a href="#" class="nav-link text-light">Crackers</a>
-                <a href="#" class="nav-link text-light">Categorias</a>
-                <a href="#" class="nav-link text-light">Como Instalar</a>
-            </div>  
+
+                <div class="dropdown">
+                <button class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Categorias</button>
+                <ul class="dropdown-menu" id="idropdown">
+                    <li class="dropdown-item "><a href="#">Ação</a></li>
+                    <li class="dropdown-item "><a href="#">Aventura</a></li>
+                    <li class="dropdown-item "><a href="#">Corrida</a></li>
+                    <li class="dropdown-item "><a href="#">Esporte</a></li>
+                    <li class="dropdown-item "><a href="#">Rpg</a></li>
+                    <li class="dropdown-item "><a href="#">Terror</a></li>
+                    <li class="dropdown-item "><a href="#">Mundo Aberto</a></li>
+                    <li class="dropdown-item "><a href="#">Estratégia</a></li>
+                    <li class="dropdown-item "><a href="#">Indie</a></li>
+                    <li class="dropdown-item "><a href="#">Sobrevivência</a></li>
+                    <li class="dropdown-item "><a href="#">Medieval</a></li>
+                </ul>
+                </div>
+            
+                <a href="#" class="nav-link text-light">Como Instalar</a>  
+            </div>
+
+            <!-- CAMPO DE BUSCA RESOLUÇÃO APARTIR DE MD OU SUPERIOR. @MEDIA QUERIRES-->
             <form action="" id="ibuscar">
                 <div class="input-group">
-                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-                    <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
-                </div>
+                    <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                    </div>
+                  </div>
             </form>  
+
         </div>        
     </nav>
 
-    <!-- Campo de pesquisa para resolução md -->
-    <form action="" id="buscartablete">
+    <!-- CAMPO DE BUSCA RESOLUÇÃO ATÉ MD -->
+    <form action="" id="buscar" class="d-md-none">
         <div class="input-group">
-            <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-            <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Buscar</button>
+            </div>
         </div>
     </form>
 
-        <!-- FOTO KRATOS -->
+        <!-- IMAGEM ABAIXO DO NAV -->
         <section>
             <div id="caixadetexto">
                 <h1>Jogos Gratuitos</h1>
@@ -64,54 +88,84 @@
         </section>
     </nav>
     
-    <!-- main com aside responsivo com cards de contéudo-->
-    <div class="container d-flex">
-        <div class="row">
-            <div class="col-12 col-lg-8 m-0">
+<!--  MAIN,ASIDE E CARDS RESOLUÇÃO MD OU SUPERIOR -->
+<div class="container d-flex">
+    <div class="row">
+        <div class="col-12 col-lg-8 m-0">
 
-            <!-- Introdução antes do contéudo-->
+            <!-- INTRODUÇÃO ANTES DO CONTÉUDO -->
             <div class="d-flex mt-4 ms-4">
                 <h5 class="me-3">Adicionados Recentemente</h5>
                 <hr class="flex-fill">
             </div>
 
-             <!-- CONTÉUDO MAIN com Cards-->   
+            <!-- PAGINAÇÃO INFERIOR -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                    <div class="d-flex float-sm-none float-md-end pagination-dark">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination pagination-sm">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">Anterior</span>
+                              </a>
+                            </li>
+                           <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">Próxima</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- CARDS -->   
             <main class="w-100">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-lg-2 g-3">
 
-                            <div class="col">
-                                <div class="card">
+                    <div class="col">
+                        <div class="card">
                           <img src="https://www.ratongames.com/wp-content/uploads/2024/06/TheGameHeader-H14-M23-S22.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           </div>
-                                </div> 
-                            </div>
+                        </div> 
+                    </div>
                         
-                            <div class="col"> 
-                                <div class="card">
+                    <div class="col"> 
+                        <div class="card">
                           <img src="https://www.ratongames.com/wp-content/uploads/2024/06/TheGameHeader-H14-M12-S34.png" class="card-img-top" alt="imagem/game">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           </div>
-                                </div>  
-                            </div>
+                         </div>  
+                    </div>
 
-                            <div class="col"> 
-                                <div class="card">
+                    <div class="col"> 
+                        <div class="card">
                           <img src="https://www.ratongames.com/wp-content/uploads/2024/06/TheGameHeader-H14-M25-S58.png" class="card-img-top" alt="imagem/game">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
 
                             <div class="col">
                                 <div class="card">
@@ -124,32 +178,37 @@
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="card">
+                    <div class="col">
+                        <div class="card">
                           <img src="https://www.ratongames.com/wp-content/uploads/2024/06/TheGameHeader-H09-M04-S26.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           </div>
-                                </div> 
-                            </div>
+                        </div> 
+                    </div>
 
-                            <div class="col">
-                                <div class="card">
+                    <div class="col">
+                        <div class="card">
                           <img src="https://www.ratongames.com/wp-content/uploads/2024/06/TheGameHeader-H11-M39-S39.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           </div>
-                                </div> 
-                            </div>
+                        </div> 
                         </div>
                     </div>
-              
+                </div>
+
+                <div class="container">
+                <hr class="mt-4">
+
+                </div>
+
                 <!-- Pagination (proxima pagina)-->
-                <div class="container mt-5">
+                <div class="container mt-4">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination pagination-sm">
                           <li class="page-item">
@@ -157,7 +216,7 @@
                               <span aria-hidden="true">Anterior</span>
                             </a>
                           </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
                           <li class="page-item"><a class="page-link" href="#">2</a></li>
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -165,7 +224,7 @@
                           
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">Proxima</span>
+                              <span aria-hidden="true">Próxima</span>
                             </a>
                           </li>
                         </ul>
@@ -173,6 +232,7 @@
                 </div>
                 
             </main>  
+
         </div>
 
             <!-- ASIDE-->
@@ -182,10 +242,12 @@
                             <hr class="flex-fill">
                         </div>
                         <div>
-                            <form action="" class="mb-5">
+                            <form action="" id="ibuscar" class="mb-4">
                                 <div class="input-group">
-                                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
-                                    <button type="submit" class="btn bg-dark text-light border-light"><i class="bi bi-search"></i></button>
+                                    <input type="text" class="form-control" placeholder="Pesquisar jogo..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                                    </div>
                                 </div>
                             </form>  
                         </div>
@@ -233,11 +295,12 @@
                         </div>
             </aside>
 
-        </div>   
-    </div>
+    </div>   
+</div>
+<!-- FECHAMENTO DO MAIN-->
 
-        <!-- FOOTER - RODAPÉ -->
-    <footer class="border-top text-muted bg-dark">
+        <!-- RODAPÉ -->
+    <div class="border-top text-muted bg-dark">
         <div class="container">
             <hr class="text-muted">
             <div class="row py-3">  
@@ -261,5 +324,5 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 </html>

@@ -18,6 +18,16 @@ header > a{
     border: 1px solid rgba(255, 255, 255, 0.055);
     padding: 1pxpx;
 }
+#idropdown{
+    background-color: rgba(0, 0, 0, 0.507);
+}
+#idropdown > li > a{ 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-decoration: none;
+    padding: 5px;
+    
+}
 #logogit{
     margin-right: 2px;
     margin-top: 3px;
